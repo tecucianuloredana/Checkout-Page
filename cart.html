@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title>Page</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="bg-light">
+         <div class="container">
+             <div class="row">
+                 <div class="col-12 col-md-8">
+                     <h3>Billing address</h3>
+                     <div class="row">
+                         <div class="col-6">
+                             <div class="form-group">
+                                 <label for="fname">First name</label>
+                                 <input type="text" id="fname" name="fname"/>
+                             </div>
+                         </div>
+                         <div class="col-6">
+                             <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name"/>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email"/>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                 <label for="username">Username</label>
+                                 <input type="text" id="username" name="username"/>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                 <label for="address">Address</label>
+                                 <input type="text" id="address" name="address"/>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                 <label for="address2">Address 2 (Optional)</label>
+                                 <input type="text" id="address2" name="address2"/>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-4">
+                             <div class="form-group">
+                                 <label for="country">Country</label>
+                                 <select name="country" id="country">
+                                     <option>Choose...</option>
+                                     <option value="United States">United States</option>
+                                     <option value="China">China</option>
+                                     <option value="Romania">Romania</option>
+                                 </select>
+                             </div>
+                         </div>
+                         <div class="col-4">
+                             <div class="form-group">
+                                 <label for="state">State</label>
+                                 <select name="state" id="state">
+                                     <option>Choose...</option>
+                                     <option value="United States">United States</option>
+                                     <option value="China">China</option>
+                                     <option value="Romania">Romania</option>
+                                 </select>
+                             </div>
+                         </div>
+                         <div class="col-4">
+                             <div class="form-group">
+                                 <label for="zip">Zip</label>
+                                 <input type="text" id="zip" name="zip">
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                 <input type="checkbox" name="same_shipping_address" id="same_shipping_address"/>
+                                 <label for="same_shipping_address">Shipping address is the same as my billing address</label>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                 <input type="checkbox" name="save_info" id="save_info"/>
+                                 <label for="save_info">Save this information for next time</label>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <h3>Payment</h3>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                 <input type="radio" name="payment" value="credit_card" id="credit_card">
+                                 <label for="credit_card">Credit Card</label>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                 <input type="radio" name="payment" value="debit_card" id="debit_card">
+                                 <label for="debit_card">Debit Card</label>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="form-group">
+                                 <input type="radio" name="payment" value="paypal" id="paypal">
+                                 <label for="paypal">Paypal</label>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-6">
+                             <div class="form-group">
+                                 <label for="card_name">Name on card</label>
+                                 <input type="text" id="card_name" name="card_name"/>
+                                 <p class="text-muted">Full name as displayed on card</p>
+                             </div>
+                         </div>
+                         <div class="col-6">
+                             <div class="form-group">
+                                 <label for="card_number">Credit card number</label>
+                                 <input type="text" id="card_number" name="card_number"/>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-3">
+                             <div class="form-group">
+                                 <label for="expiration">Expiration</label>
+                                 <input type="text" id="expiration" name="expiration"/>
+                             </div>
+                         </div>
+                         <div class="col-3">
+                             <div class="form-group">
+                                 <label for="cvv">CVV</label>
+                                 <input type="text" id="cvv" name="cvv"/>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12">
+                             <button class="btn btn-primary" type="submit">Continue to checkout</button>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-12 col-md-4">
+                     <h3>Your cart</h3>
+                     <ul class="list-group mb-3">
+                         <li class="list-group-item d-flex justify-content-between lh-condensed">
+                             <div>
+                                 <h6 class="my-0">Product name</h6>
+                                 <small class="text-muted">Brief description</small>
+                             </div>
+                             <span class="text-muted">$12</span>
+                         </li>
+                         <li class="list-group-item d-flex justify-content-between lh-condensed">
+                             <div>
+                                 <h6 class="my-0">Second product</h6>
+                                 <small class="text-muted">Brief description</small>
+                             </div>
+                             <span class="text-muted">$8</span>
+                         </li>
+                         <li class="list-group-item d-flex justify-content-between lh-condensed">
+                             <div>
+                                 <h6 class="my-0">Third item</h6>
+                                 <small class="text-muted">Brief description</small>
+                             </div>
+                             <span class="text-muted">$5</span>
+                         </li>
+                         <li class="list-group-item d-flex justify-content-between bg-light">
+                             <div class="text-success">
+                                 <h6 class="my-0">Promo code</h6>
+                                 <small>EXAMPLECODE</small>
+                             </div>
+                             <span class="text-success">-$5</span>
+                         </li>
+                         <li class="list-group-item d-flex justify-content-between">
+                             <span>Total (USD)</span>
+                             <strong>$20</strong>
+                         </li>
+                     </ul>
+                     <form class="card p-2">
+                         <div class="input-group">
+                             <input type="text" class="form-control" placeholder="Promo code">
+                             <div class="input-group-append">
+                                 <button type="submit" class="btn btn-secondary">Redeem</button>
+                             </div>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js" integrity="sha512-oHBLR38hkpOtf4dW75gdfO7VhEKg2fsitvHZYHZjObc4BPKou2PGenyxA5ZJ8CCqWytBx5wpiSqwVEBy84b7tw==" crossorigin="anonymous"></script>
+    </body>
+
+</html>
